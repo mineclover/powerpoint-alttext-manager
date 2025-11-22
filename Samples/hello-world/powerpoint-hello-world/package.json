@@ -1,0 +1,42 @@
+{
+  "name": "powerpoint-alttext-manager",
+  "version": "1.0.0",
+  "description": "PowerPoint Alternative Text Manager - Efficiently manage and edit alt text for PowerPoint slides",
+  "main": "dist/taskpane.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "dev": "webpack serve --mode development --open",
+    "start": "webpack serve --mode development",
+    "watch": "webpack --mode development --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "powerpoint",
+    "office-addin",
+    "accessibility",
+    "alt-text",
+    "alternative-text"
+  ],
+  "author": "mineclover",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/office-js": "^1.0.376",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.56.0",
+    "html-webpack-plugin": "^5.6.0",
+    "office-addin-dev-certs": "^1.13.0",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
