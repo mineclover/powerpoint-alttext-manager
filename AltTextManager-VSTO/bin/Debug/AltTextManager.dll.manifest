@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AltTextManager.dll" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <co.v1:customHostSpecified />
+  </entryPoint>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AltTextManager.dll" size="26624">
+      <asmv1:assemblyIdentity name="AltTextManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <vstov4:addIn xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">
+    <vstov4:entryPointsCollection>
+      <vstov4:entryPoints>
+        <vstov4:entryPoint class="AltTextManager.ThisAddIn">
+          <assemblyIdentity name="AltTextManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+        </vstov4:entryPoint>
+      </vstov4:entryPoints>
+    </vstov4:entryPointsCollection>
+    <vstov4:update enabled="false" />
+    <vstov4:application>
+      <vstov4:customizations>
+        <vstov4:customization>
+          <vstov4:appAddIn application="PowerPoint" loadBehavior="3" keyName="AltTextManager">
+            <vstov4:friendlyName>PowerPoint 대체 텍스트 관리자</vstov4:friendlyName>
+            <vstov4:description>PowerPoint 슬라이드 요소의 대체 텍스트를 쉽게 관리합니다</vstov4:description>
+          </vstov4:appAddIn>
+        </vstov4:customization>
+      </vstov4:customizations>
+    </vstov4:application>
+  </vstov4:addIn>
+</asmv1:assembly>

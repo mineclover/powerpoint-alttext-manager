@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vstav3:application xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
+  <vstav3:customizations>
+    <vstav3:customization>
+      <vstav3:appAddIn application="PowerPoint"
+                       loadBehavior="3"
+                       keyName="AltTextManager">
+        <vstav3:friendlyName>PowerPoint 대체 텍스트 관리자</vstav3:friendlyName>
+        <vstav3:description>PowerPoint 슬라이드 요소의 대체 텍스트를 쉽게 관리합니다</vstav3:description>
+        <vstav3:formRegions />
+        <vstov4:update xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4" enabled="true">
+          <vstov4:expiration maximumAge="7" unit="days" />
+        </vstov4:update>
+      </vstav3:appAddIn>
+    </vstav3:customization>
+  </vstav3:customizations>
+</vstav3:application>
